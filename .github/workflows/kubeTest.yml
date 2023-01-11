@@ -1,4 +1,4 @@
-name: CI workflow
+name: CI
 
 on:
   push:
@@ -23,4 +23,4 @@ jobs:
         run: ./installKuttl.sh
      
       - name: "Run tests"     
-      - run: kubectl kuttl test --start-kind=true  ./tests/e2e/  
+        run: kubectl kuttl test --start-kind=true  ./tests/e2e/  
